@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Agbalumo&family=Montserrat:wght@900&family=Poppins:wght@100;400&family=Roboto+Condensed&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background-image: url(seesh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.main{
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vh;
+  height: 40vh;
+  border-radius: 15px;
+  background: transparent;
+  
+}
+h1{
+  color: (0, 0%, 95%);
+  font-size: 3em;
+  font-family: 'Impact',sans-serif;
+}
+h2{
+  font-family: "Georgia", sans-serif;
+  color: hsl(0, 52%, 66%);
+  padding: 20px;
+}
+.login-box{
+  
+  color: white;
+  
+}
+.inputBox{
+  position: relative;
+  width: 300px;
+  color: white;
+  padding: 10px;
+
+}
+.inputBox input{
+  width: 100%;
+  color: hsl(0, 0%,50%);
+  padding: 10px;
+  border: 1px solid black;
+  background: hsl(0, 0%, 10%);
+  border-radius: 15px;
+  outline: none;
+  font-size: 1em;
+}
+.inputBox span{
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  font-size: 1em;
+  text-transform: none;
+  padding: 10px 30px 0px 20px;
+  transition: 0.25s ease;
+}
+
+input:valid + span,
+input:focus + span
+{
+  
+  transform: translate(10px,-20px)
+}
+
+a{
+  color: hsl(0, 0%, 80%);
+  padding: 20px;
+  text-decoration: none;
+}
+
+
+.login-button{
+  margin: 15px;
+  width: 90%;
+  height: 5vh;
+  border-radius: 15px;
+  border: 1px solid black;
+  background: hsl(0, 0%, 10%);
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+.signup-button{
+  margin-left: 15px;
+  width: 90%;
+  height: 5vh;
+  border-radius: 15px;
+  border: 1px solid black;
+  background: hsl(0, 0%, 10%);
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+label{
+  margin-left: 15px;
+}
+
+@media (max-width: 575px) { /* Example for mobile devices */
+  body{
+
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+}
